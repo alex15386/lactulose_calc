@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Розрахунок Лактулози</h1>
+  <div>
+    <label for="storageTerm">Кількість лактулози (%):</label>
+    <input type="number" id="storageTerm" placeholder="Введіть кількість лактулози">
+    <button onclick="calculateLactulose()">Розрахувати</button>
+  </div>
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Кількість лактулози</th>
+          <th>Титрована кислотність (°Т)</th>
+          <th>pH</th>
+          <th>Густина</th>
+          <th>Масова частка білка</th>
+        </tr>
+      </thead>
+      <tbody id="resultsTable">
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="/script.js"></script>
+</body>
+</html>
